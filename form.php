@@ -84,13 +84,13 @@
 						</div>
 					</div>
 	  				<div class="cbp-mc-column">
-						<label for="favProf">Favorite Professor in NMV</label>
+						<label for="favProf">Favorite Professor</label>
 	  					<input type="text" id="favProf" name="favProf" placeholder="">
-	  					<label for="bondNMV">Bonding between you and NMV</label>
+	  					<label for="bondNMV">Bonding</label>
 	  					<input type="text" id="bondNMV" name="bondNMV" placeholder="">
 	  					<label for="addiction">Addicted to</label>
 						<input type="text" id="addiction" name="addiction" placeholder="">
-	  					<label for="unforDay">Unforgettable Day @ SASTRA</label>
+	  					<label for="unforDay">Unforgettable Day</label>
 	  					<textarea id="unforDay" name="unforDay" placeholder="In 50 words"></textarea>
 						<label for="buckList">Bucket List</label>
 	  					<textarea id="buckList" name="buckList" placeholder="Five things you want to do before you die"></textarea>	

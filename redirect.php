@@ -8,9 +8,9 @@ require_once realpath(dirname(__FILE__) . '/autoload.php');
 //Constants
 define("MYSQL_ERR_CODE_DUPLICATE","1062");
 
-$client_id = '211147358402-q8hptjr6el9d3htauerr978p6ig853rb.apps.googleusercontent.com';
-$client_secret = 'U9Iza2sQUHxkC41rzmqjudQg';
-$redirect_uri = 'http://nmv2011.zz.mu/redirect.php';
+$client_id = '';
+$client_secret = '';
+$redirect_uri = '';
 
 $client = new Google_Client();
 $client->setClientId($client_id);
@@ -45,7 +45,7 @@ $userinfoArray = json_decode($userinfo);
 
 new dBug($userinfoArray);
 
-$my_sqlcon= new mysqli("mysql.hostinger.in", "u383813282_govi", "password","u383813282_nmv20");
+$my_sqlcon= new mysqli("");
 $insertList = "INSERT INTO user_Google(name,google_id,given_name)VALUES('$userinfoArray->name','$userinfoArray->id','$userinfoArray->given_name')" ;
 			if(!$my_sqlcon->query($insertList))
 			{

@@ -14,7 +14,7 @@
     <meta name="description" content="Sign-in form for MyAmbitionBox">
     <meta name="author" content="Govindarajan">
     <link rel="icon" href="icons/favicon.ico">
-    <title>Year Book 2011 Batch - NMV</title>
+    <title>Year Book</title>
 	<!--CSS-->
     <link href="./css/bootstrap.css" rel="stylesheet">
     <link href="./css/signin.css" rel="stylesheet">
@@ -27,7 +27,7 @@
   </head>
   <body onload="reset()">
     <div class="container">
-		<h1 id="pageTitle" class="threeD-text">NMV 2011 Batch Year Book</h1>
+		<h1 id="pageTitle" class="threeD-text">Year Book</h1>
 		<h2 id="separator"><  ><h2>
 		<div id="google-login">
 		<? if (isset($authUrl)) { echo "<a href='" . $authUrl . "'><img src='images/Google_login.png' id='gl-image'/></a>";} ?>
@@ -67,7 +67,7 @@ if(isset($_SESSION["start"]))
 		if(isset($_POST["user"]) && isset($_POST["passw"]))
 		{	
 			/*Get username,password,directoryID from one database and salt from another database*/
-			$my_sqlcon= new mysqli("mysql.hostinger.in", "u383813282_govi", "password","u383813282_nmv20");
+			$my_sqlcon= new mysqli("");
 			if ($my_sqlcon->connect_errno)
 				echo "Failed. Try again" .mysqli_connect_error();
 			
@@ -96,7 +96,7 @@ if(isset($_SESSION["start"]))
 			$dir_idR = $row[0];
 			
 			 //Salt - separate DB
-			 $my_sqlcon= new mysqli("mysql.hostinger.in", "u383813282_govi2", "password","u383813282_salt");
+			 $my_sqlcon= new mysqli("");
 			 $query = "SELECT salt FROM salt WHERE ID='$uniqIdR'";
 			if(!($retrieve = $my_sqlcon->query($query)))
 				echo "Error - Salt Retrieval";
@@ -123,7 +123,7 @@ if(isset($_SESSION["start"]))
 		{	
 			define("MYSQL_ERR_CODE_DUPLICATE","1062");
 			
-			$my_sqlcon= new mysqli("mysql.hostinger.in", "u383813282_govi", "password","u383813282_nmv20");
+			$my_sqlcon= new mysqli("");
 			if ($my_sqlcon->connect_errno)
 			echo "Failed. Try again" .mysqli_connect_error();
 	
@@ -155,7 +155,7 @@ if(isset($_SESSION["start"]))
 					echo "Error - Unique ID Retrieval - SignUp";
 				$row = $retrieve->fetch_row();
 				$uniqIdR = $row[0];
-				$my_sqlcon= new mysqli("mysql.hostinger.in", "u383813282_govi2", "password","u383813282_salt");
+				$my_sqlcon= new mysqli("");
 				/*Store salt in separate Database*/
 				$insertList = "INSERT INTO salt(ID,salt)VALUES('$uniqIdR','$saltS')" ;
 				if(!$my_sqlcon->query($insertList))

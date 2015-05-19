@@ -6,9 +6,9 @@ unset($_SESSION["access_token"]);
 
 require_once realpath(dirname(__FILE__) . '/autoload.php');
 
-$client_id = '211147358402-q8hptjr6el9d3htauerr978p6ig853rb.apps.googleusercontent.com';
-$client_secret = 'U9Iza2sQUHxkC41rzmqjudQg';
-$redirect_uri = 'http://nmv2011.zz.mu/redirect.php';
+$client_id = '';
+$client_secret = '';
+$redirect_uri = '';
 
 $client = new Google_Client();
 $client->setClientId($client_id);
