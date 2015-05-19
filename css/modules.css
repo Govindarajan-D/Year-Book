@@ -1,0 +1,17 @@
+.messageBox{
+	position:fixed;
+	width:auto;
+	height:auto;
+	top:50px;
+	left:45%;
+	background: black;
+	z-index:100;
+}
+p.messageBoxText{
+	padding:5px 10px 5px 10px;
+	width:auto;
+   	height: 20px;
+    	display: table-cell;
+   	vertical-align:middle;
+   	text-align:center;
+}

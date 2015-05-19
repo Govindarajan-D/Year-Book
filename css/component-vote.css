@@ -1,0 +1,155 @@
+.cbp-mc-form-row{
+	padding: 10px 30px;
+	margin-top:40px;
+}
+
+.cbp-mc-form-row label {
+	display: inline;
+	padding: 40px 5px 5px 2px;
+	font-size: 1.4em;
+	text-transform: none;
+	letter-spacing: 1px;
+	cursor: pointer;
+	margin-bottom:30px;
+	margin-left:30px;
+}
+
+.cbp-mc-form-row input{
+	display: inline;
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	line-height: 1.5;
+	font-size: 1.4em;
+	padding: 5px 10px;
+	color: #fff;
+	width:25%;
+	background: transparent;
+	margin-bottom:30px;
+    margin-left:30px;
+}
+
+.cbp-mc-form-row input,
+.cbp-mc-form-row textarea {
+	border: 3px solid #fff;
+}
+
+.cbp-mc-form-row textarea {
+	min-height: 200px;
+}
+
+.cbp-mc-form-row input:focus,
+.cbp-mc-form-row textarea:focus,
+.cbp-mc-form-row label:active + input,
+.cbp-mc-form-row label:active + textarea {
+	outline: none;
+	border: 3px solid #330033/*#10689a */; /* Change color here */
+}
+
+.cbp-mc-form-row select:focus {
+	outline: none;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #330033;/* Change color here */
+    font-style: italic;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #330033;/* Change color here */
+    font-style: italic;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #330033;/* Change color here */
+    font-style: italic;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #330033;/* Change color here */
+    font-style: italic;
+}
+
+.cbp-mc-submit-wrap {
+	padding-top: 80px;
+	padding-left:270px;
+	clear: both;
+}
+
+.cbp-mc-form-row input.cbp-mc-submit {
+	background:#1478b1;
+	border: none;
+	color: #fff;
+	width: auto;
+	cursor: pointer;
+	text-transform: uppercase;
+	display: inline-block;
+	margin-left:20px;
+	margin-right:20px;
+	padding: 15px 30px;
+	font-size: 1.1em;
+	border-radius: 2px;
+	letter-spacing: 1px;
+}
+
+#save{
+	background-color:#00A300;
+}
+
+#save:hover{
+	background-color:#008F00;
+}
+
+.cbp-mc-form-row input.cbp-mc-submit:hover {
+	background:  #10689a;
+}
+
+.btn-logout {
+  -webkit-box-shadow: 0px 1px 4px #666666;
+  -moz-box-shadow: 0px 1px 4px #666666;
+  box-shadow: 0px 1px 4px #666666;
+  font-family: Arial;
+  color: #0f0f0f;
+  font-size: 16px;
+  background: #dfdce0;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+#logout{
+ position:absolute;
+  left:1100px;
+  top: 20px;
+}
+
+.btn-logout:hover {
+  background: #cacbcc;
+  text-decoration: none;
+}
+
+.cbp-mc-row label{
+display:inline-block;
+text-align:right;
+width:100px;
+}
+
+@media screen and (max-width: 70em) {
+	.cbp-mc-column {
+		width: 50%;
+	}
+	.cbp-mc-column:nth-child(3) {
+		width: 100%;
+	}
+	
+	#logout{
+		position:absolute;
+		left:850px;
+		top: 20px;
+	}
+	
+}
+
+@media screen and (max-width: 48em) {
+	.cbp-mc-column {
+		width: 100%;
+		padding: 10px;
+	}
+}
